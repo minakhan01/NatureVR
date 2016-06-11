@@ -38,6 +38,8 @@
   <!-- VR feature tags. -->
   <uses-feature android:name="android.software.vr.mode" android:required="false" />
   <uses-feature android:name="android.hardware.vr.high_performance" android:required="false" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-feature android:name="android.hardware.microphone" android:required="false" />
   <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
   <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
   <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
