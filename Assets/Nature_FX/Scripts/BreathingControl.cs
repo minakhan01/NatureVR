@@ -12,6 +12,7 @@ public class BreathingControl : MonoBehaviour {
 		micController = GameObject.Find ("MicController");
 		dandelion = GameObject.Find ("Dandelions_A");
 		particleSystem = dandelion.GetComponent<ParticleSystem>();
+		IncreaseRate ();
 //		var ex = particleSystem.externalForces;
 //		ex.enabled = true;
 //		ex.multiplier = 500f;
@@ -21,7 +22,7 @@ public class BreathingControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		var loudness = micController.GetComponent<MicControl>().loudness;
-//		Debug.Log ("loudness: "+loudness);
+		Debug.Log ("loudness: "+loudness);
 		if (loudness > 0.05f) {
 			Debug.Log ("loudness > 0.05f");
 			IncreaseRate ();

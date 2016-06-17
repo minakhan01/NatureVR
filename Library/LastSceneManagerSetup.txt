@@ -1,7 +1,4 @@
 sceneSetups:
-- path: Assets/back.unity
-  isLoaded: 1
-  isActive: 1
 - path: Assets/Nature_FX/Nature_FX.unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1

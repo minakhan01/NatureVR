@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8C83EE6A-A260-7AED-6699-B706A35FCBDC}</ProjectGuid>
+    <ProjectGuid>{DF30B21B-2CFC-7F84-19D1-6D39D67AD61F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ButtonActions.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\FPS.cs" />
@@ -86,9 +87,18 @@
      <Compile Include="Assets\GoogleVR\Scripts\VRDevices\GvrDevice.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\VRDevices\iOSDevice.cs" />
      <Compile Include="Assets\Nature_FX\Scripts\BreathingControl.cs" />
+     <Compile Include="Assets\Underwater Effect\Scripts\AnimatedProjector.cs" />
+     <Compile Include="Assets\Underwater Effect\Scripts\Default\MouseLook.cs" />
+     <Compile Include="Assets\Underwater Effect\Scripts\Effects.cs" />
+     <Compile Include="Assets\Underwater Effect\Scripts\Underwater.cs" />
      <None Include="Assets\Nature_FX\Shaders\AlphaSelfIllum_NoFog_Nature.shader" />
+     <None Include="Assets\Underwater Effect\Shaders\Underwater_1.shader" />
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+     <None Include="Assets\Underwater Effect\Shaders\Effects.shader" />
+     <None Include="Assets\Underwater Effect\Shaders\Underwater_2.shader" />
      <None Include="Assets\GoogleVR\Resources\UnlitTexture.shader" />
+     <None Include="Assets\Underwater Effect\Shaders\Underwater_3.shader" />
+     <None Include="Assets\Underwater Effect\Shaders\Caustics.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\MicControl2\UpdateLog.txt" />
@@ -97,7 +107,7 @@
      <None Include="Assets\GoogleVR\Resources\SolidColor.shader" />
      <None Include="Assets\Nature_FX\Shaders\AlphaSelfIllum_Nature.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/khan32m/git_repos/Nature/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
@@ -106,12 +116,12 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/khan32m/git_repos/Nature/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/khan32m/git_repos/NatureJoy/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A62A5EA2-8DCA-D475-A99C-C07AE06D8ABF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{8D6F8912-00AE-4B27-7B0E-D006677E8C10}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
